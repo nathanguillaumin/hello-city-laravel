@@ -3,8 +3,8 @@
 @section('title', 'About us | ' . config('app.name'))
 
 @section('content')
-        <img src="{{ asset('/img/nathan.svg')}}" alt="Avatar of Nathan" style="width:30%">
-        <p>Built with &hearts; by Nathan.</p>
+        <img class="mt-12" src="{{ asset('/img/nathan.svg')}}" alt="Avatar of Nathan" style="width:30%">
+        <h2 class="my-5 text-gray-700">Built with <span class="text-pink-500">&hearts;</span> by Nathan.</h2>
 
-        <p><a href={{ route('home') }}>Revenir à la page d'accueil</a></p>
+        <p><a class="text-indigo-500 hover:text-indigo-600 underline" href={{ route('home') }}>Revenir à la page d'accueil</a></p>
 @endsection
