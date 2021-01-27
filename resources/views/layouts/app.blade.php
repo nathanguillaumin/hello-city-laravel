@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title', config('app.name'))</title>
+        <title>{{ page_title($pageTitle ?? null)}}</title>
 
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
@@ -14,12 +14,6 @@
             @yield('content')
         </main>
 
-        <footer>
-            <p class="text-gray-400">&copy; Copyright {{ date('Y')}} 
-                @if(!Route::is('about'))
-                &middot; <a class="text-indigo-500 hover:text-indigo-600 underline" href={{ route('about') }}>About us</a>
-                @endif
-            </p>
-        </footer>
+        @include('layouts/partials/_footer')
     </body>
 </html>

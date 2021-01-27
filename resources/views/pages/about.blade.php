@@ -1,6 +1,4 @@
-@extends('app')
-
-@section('title', 'About us | ' . config('app.name'))
+@extends('layouts.app', ['pageTitle' => 'About us'])
 
 @section('content')
         <img class="mt-12" src="{{ asset('/img/nathan.svg')}}" alt="Avatar of Nathan" style="width:30%">

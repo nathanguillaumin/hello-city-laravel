@@ -1,6 +1,4 @@
-@extends('app')
-
-@section('title', config('app.name'))
+@extends('layouts.app')
 
 @section('content')
         <img class="mt-12 rounded shadow-md" src="{{ asset('/img/valencian_flag.png')}}" alt="Valencian flag" style="width:30%">
